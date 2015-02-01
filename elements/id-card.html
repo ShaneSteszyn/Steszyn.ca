@@ -1,17 +1,16 @@
-<link rel="import" href="bower_components/polymer/polymer.html">
-<link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-icon-button/core-icon-button.html">
 
-<polymer-element name="post-card">
+<polymer-element name="id-card">
   <template>
     <style>
     :host {
-      display: block;
-      position: relative;
-      background-color: white;
-      padding: 20px;
-      width: 100%;
-      font-size: 1.2rem;
-      font-weight: 300;
+      border: 1px solid #bebebe;
+      padding: 16px;
+      margin: 16px;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #555;
     }
     .card-header {
       margin-bottom: 10px;
@@ -24,9 +23,8 @@
     }
     polyfill-next-selector { content: '.card-header img'; }
     .card-header ::content img {
-      width: 70px;
       border-radius: 50%;
-      margin: 10px;
+      margin: 5px;
     }
     core-icon-button {
       position: absolute;
@@ -44,27 +42,9 @@
       <content select="h2"></content>
     </div>
 
-    <core-icon-button
-      id="favicon"
-      icon="favorite"
-      on-tap="{{favoriteTapped}}">
-    </core-icon-button>
-
     <content></content>
-    
   </template>
   <script>
-    Polymer({
-      publish: {
-        favorite: {
-          value: false,
-          reflect: true
-        }
-      },
-      favoriteTapped: function(event, detail, sender) {
-        this.favorite = !this.favorite;
-        this.fire('favorite-tap');
-      }
-    });
+    Polymer({ });
   </script>
 </polymer-element>

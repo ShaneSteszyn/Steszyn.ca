@@ -1,0 +1,151 @@
+<polymer-element name="past-work">
+  <template>
+
+    <style>
+      .chip-container {
+        margin-bottom: 100px;
+        top: 380px;
+        right: 0;
+        left: 0;
+        text-align: center;
+      }
+
+      .chip {
+        display: inline-block;
+        position: relative;
+        border-radius: 3px;
+        margin: 4px;
+        overflow: hidden;
+        text-align: start;
+        background-color: #fff;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+      }
+
+      .chip-top {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top 0px:;
+        width: 300px;
+        height: 300px;
+      }
+
+      .chip-bottom {
+        padding: 8px;
+        line-height: 1.5;
+      }
+
+      .chip-project-title {
+        font-weight: bold;
+      }
+
+      .card {
+        margin-bottom: 100px;
+        height: 500px;
+        border-radius: 3px;
+        text-align: start;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .card-left {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top 0px;
+        width: 400px
+      }
+
+      .card-right {
+        padding: 24px;
+      }
+
+      .card-icon {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin-right: 16px;
+      }
+
+      .card-project-title {
+        font-size: 2em;
+      }
+    </style>
+
+    <core-animated-pages selected="{{page}}" transitions="hero-transition" on-core-animated-pages-transition-end="{{complete}}" id="past-work">
+
+      <section>
+
+        <div class="chip-container" hero-p on-tap="{{transition}}">
+          <h1>Previous Projects</h1>
+          <template repeat="{{items as item}}">
+
+            <div class="chip" hero-id="{{item.year}}-{{item.project}}" hero?="{{selectedProject === item }}">
+              <div class="chip-top" style="background-image: url(images/{{item.image}});" hero-id="{{item.year}}-{{item.project}}-art" hero?="{{selectedProject === item}}"></div>
+              <div class="chip-bottom">
+                <div class="chip-project-title">{{item.project}}</div>
+                <div class="chip-year">{{item.year}}</div>
+              </div>
+            </div>
+
+          </template>
+
+        </div>
+      </section>
+
+      <section id="details">
+
+        <div class="card" layout horizontal hero-id="{{selectedProject.year}}-{{selectedProject.project}}" hero on-tap="{{transition}}">
+          <div class="card-left" style="background-image: url(images/{{selectedProject.image}})" hero-id="{{selectedProject.year}}-{{selectedProject.project}}-art" hero></div>
+          <div class="card-right" flex>
+            <div layout horizontal center>
+              <div flex>
+                <div class="card-project-title">{{selectedProject.project}}</div>
+                <div class="card-project-year">{{selectedProject.year}}</div>
+                <p class="card-project-desc">{{selectedProject.desc}}</p>
+                <b>Check out this project: </b>
+                <a href="{{selectedProject.url}}">{{selectedProject.url}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </core-animated-pages>
+
+  </template>
+  <script>
+
+    Polymer('past-work', {
+
+      page: 0,
+
+      items: [
+        { year: '2015',
+          project: 'SultanAuto.ca',
+          color: '#f4db33',
+          desc: 'A website done for a friend\'s growing business. SultanAuto excels at dealing vehicles. If you\'re looking for one, you could probably find a car here!',
+          image: 'SultanAuto.jpg',
+          url: 'http://www.sultanauto.ca' },
+        { year: '2014',
+          project: 'HwrkIt',
+          color: '#FF9800',
+          desc: 'This was a final project for a Java/Android class. The Android app collects information from the user about his average homework load, and calculates statistics for him/her.',
+          image: 'HwrkIt.png',
+          url: 'https://github.com/jacobrs/HwrkIt'  }
+      ],
+
+      selectedProject: null,
+
+      transition: function(e) {
+        if (this.page === 0 && e.target.templateInstance.model.item) {
+          this.selectedProject = e.target.templateInstance.model.item;
+          this.page = 1;
+        } else {
+          this.page = 0;
+        }
+      }
+    });
+
+  </script>
+  </polymer-element>

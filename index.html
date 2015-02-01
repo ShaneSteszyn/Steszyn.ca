@@ -9,7 +9,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 <html>
 <head>
-  <title>core-scroll-header-panel: demo5</title>
+  <title>Steszyn.ca</title>
+
+  <meta charset="utf-8"> 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
@@ -18,7 +20,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 
   <link rel="import" href="bower_components/core-scroll-header-panel/core-scroll-header-panel.html">
+  <link href="bower_components/core-animated-pages/core-animated-pages.html" rel="import">
+  <link href="bower_components/core-transition/core-transition-css.html" rel="import">
+
+  <!-- Elements -->
   <link rel="import" href="sample-content.html">
+  <link rel="import" href="elements/past-work.html">
+  <link rel="import" href="elements/id-card.html">
   <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
   <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
 
@@ -45,12 +53,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     /* background for toolbar when it is at its full size */
     core-scroll-header-panel::shadow #headerBg {
-      background-image: url(images/bg9.jpg);
+      /*background-position:  right 0px bottom -200px;*/
+      background-image: url(images/dragonfly.jpg);
+    }
+    .layer {
+      background-color: rgba(248, 247, 216, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+      width: 100%;
+      height: 192px;
     }
 
     /* background for toolbar when it is condensed */
     core-scroll-header-panel::shadow #condensedHeaderBg {
-      background-color: #f4b400;
+      background-color: #4CAF50;
     }
 
     core-toolbar {
@@ -64,6 +82,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     .content {
+      /*margin: 60px 60px 60px 0;*/
       padding: 8px;
     }
 
@@ -72,25 +91,39 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </head>
 <body unresolved>
 
-  <core-scroll-header-panel condenses>
+  <core-scroll-header-panel condenses noReveal noDissolve >
 
     <core-toolbar class="tall">
 
       <div flex></div>
-      <core-icon-button icon="more-vert"></core-icon-button>
-      <div class="bottom indent title">Shane Steszyn</div>
+      <!-- <core-icon-button icon="more-vert"></core-icon-button> -->
+      <!-- <div class="bottom  title">Shane Steszyn</div> -->
 
     </core-toolbar>
 
     <div class="content">
 
-      <sample-content size="100"></sample-content>
+      <div class="container" class="core-transition core-transition-bottom" layout vertical center>
+
+        <id-card>
+          <img width="100" height="100" src="../images/avatar.jpg">
+          <h2>Shane Steszyn</h2>
+          <div style="font-size: 22px; padding: 8px 0 16px; color: #888;">
+            A Montréal developer and tech enthusiast.
+          </div>
+          <p>I'm currently an intern at a startup as well as a VP of another, I am learning things as I progress through the field. If you have any questions, whether I do or don't know the answer, I will try my hardest to figure it out. If you're curious about something, it's likely I am too.</p>
+          <p>Send me an e-mail at: <a href="mailto:shane@steszyn.ca">shane@steszyn.ca</a></p>
+        </id-card>
+
+      </div>
+
+      <past-work></past-work>
 
     </div>
 
   </core-scroll-header-panel>
 
-  <script>
+  <!-- <script>
 
     // custom transformation: scale header's title
     var titleStyle = document.querySelector('.title').style;
@@ -102,7 +135,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           'scale(' + scale + ') translateZ(0)';
     });
 
-  </script>
+  </script> -->
 
 </body>
 </html>
