@@ -1,0 +1,30 @@
+[
+  {
+    "uid": 1,
+    "text" : "Have you heard about the Web Components revolution?",
+    "username" : "Eric",
+    "avatar" : "images/avatar.jpg",
+    "favorite": false
+  },
+  {
+    "uid": 2,
+    "text" : "Loving this Polymer thing.",
+    "username" : "Rob",
+    "avatar" : "images/avatar.jpg",
+    "favorite": false
+  },
+    {
+    "uid": 3,
+    "text" : "So last year...",
+    "username" : "Dimitri",
+    "avatar" : "images/avatar.jpg",
+    "favorite": false
+  },
+  {
+    "uid": 4,
+    "text" : "Pretty sure I came up with that first.",
+    "username" : "Ada",
+    "avatar" : "images/avatar.jpg",
+    "favorite": false
+  }
+]
