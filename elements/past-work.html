@@ -69,6 +69,14 @@
       .card-project-title {
         font-size: 2em;
       }
+
+      paper-button.hover:hover {
+        background: #eee;
+      }
+
+      paper-button {
+        text-transform:none;
+      }
     </style>
 
     <core-animated-pages selected="{{page}}" transitions="hero-transition" on-core-animated-pages-transition-end="{{complete}}" id="past-work">
@@ -95,7 +103,7 @@
       <section id="details">
 
         <div class="card" layout horizontal hero-id="{{selectedProject.year}}-{{selectedProject.project}}" hero on-tap="{{transition}}">
-          <div class="card-left" style="background-image: url(images/{{selectedProject.image}})" hero-id="{{selectedProject.year}}-{{selectedProject.project}}-art" hero></div>
+          <div class="card-left" style="background-image: url(images/{{selectedProject.image}}); width: {{selectedProject.width}}" hero-id="{{selectedProject.year}}-{{selectedProject.project}}-art" hero></div>
           <div class="card-right" flex>
             <div layout horizontal center>
               <div flex>
@@ -103,7 +111,9 @@
                 <div class="card-project-year">{{selectedProject.year}}</div>
                 <p class="card-project-desc">{{selectedProject.desc}}</p>
                 <b>Check out this project: </b>
-                <a href="{{selectedProject.url}}">{{selectedProject.url}}</a>
+                <paper-button class="hover">
+                  <a href="{{selectedProject.url}}">{{selectedProject.url}}</a>
+                </paper-button>
               </div>
             </div>
           </div>
@@ -126,13 +136,15 @@
           color: '#f4db33',
           desc: 'A website done for a friend\'s growing business. SultanAuto excels at dealing vehicles. If you\'re looking for one, you could probably find a car here!',
           image: 'SultanAuto.jpg',
-          url: 'http://www.sultanauto.ca' },
+          url: 'http://www.sultanauto.ca',
+          width: '60%' },
         { year: '2014',
           project: 'HwrkIt',
           color: '#FF9800',
-          desc: 'This was a final project for a Java/Android class. The Android app collects information from the user about his average homework load, and calculates statistics for him/her.',
+          desc: 'This was a final project for a Java/Android class. The Android app collects information from the user about his/her average homework load and calculates statistics for him/her.',
           image: 'HwrkIt.png',
-          url: 'https://github.com/jacobrs/HwrkIt'  }
+          url: 'https://github.com/jacobrs/HwrkIt',
+          width: '30%'  }
       ],
 
       selectedProject: null,

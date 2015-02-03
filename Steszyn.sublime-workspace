@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"selected",
+				"selectedProject"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
 				"remove",
 				"removeClass"
 			],
@@ -359,23 +371,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3825,
+				"buffer_size": 4555,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/Users/shanesteszyn/Projects/sultanauto/css/galleriffic-4.css",
+			"file": "elements/past-work.html",
 			"settings":
 			{
-				"buffer_size": 2909,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/Users/shanesteszyn/Projects/sultanauto/loadListings.php",
-			"settings":
-			{
-				"buffer_size": 2489,
+				"buffer_size": 4663,
 				"line_ending": "Unix"
 			}
 		}
@@ -383,9 +387,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 367.0,
+		"height": 151.0,
 		"selected_items":
 		[
+			[
+				"git diff",
+				"Git: Diff"
+			],
 			[
 				"for",
 				"CodeFormatter: Format as HTML Syntax"
@@ -505,10 +513,6 @@
 			[
 				"dash",
 				"DashDoc: invoke Dash with selected word"
-			],
-			[
-				"git diff",
-				"Git: Diff"
 			],
 			[
 				"insta",
@@ -752,10 +756,16 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/shanesteszyn/Projects/Steszyn.ca"
+		"/Users/shanesteszyn/Projects/Steszyn.ca",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components/core-transition",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components/paper-button",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/elements"
 	],
 	"file_history":
 	[
+		"/Users/shanesteszyn/Projects/sultanauto/loadListings.php",
+		"/Users/shanesteszyn/Projects/sultanauto/css/galleriffic-4.css",
 		"/Users/shanesteszyn/Projects/sultanauto/deleteImg.php",
 		"/Users/shanesteszyn/Projects/sultanauto/details.php",
 		"/Users/shanesteszyn/Projects/sultanauto/mail.php",
@@ -775,7 +785,6 @@
 		"/Users/shanesteszyn/Downloads/ui-kit-contacts/index.html",
 		"/Users/shanesteszyn/Projects/sultanauto/contact.php",
 		"/Users/shanesteszyn/Projects/sultanauto/static/css/contactStyle.css",
-		"/Users/shanesteszyn/Projects/sultanauto/css/galleriffic-4.css",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/create/insert_reservation_multi.php",
 		"/Users/shanesteszyn/Projects/sultanauto/insertCar.php",
 		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
@@ -882,8 +891,7 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_discount_master_list.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/update_reservation_discount.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/additional_charge_list.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_package.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/functions/check_latest_reservation.php"
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_package.php"
 	],
 	"find":
 	{
@@ -907,6 +915,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"content",
+			"20px",
 			"http",
 			"php_http.dll",
 			"extension=php_http.dll",
@@ -1032,9 +1042,7 @@
 			"pen",
 			"user",
 			"users/*",
-			"header",
-			"search",
-			"cardbran"
+			"header"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1100,15 +1108,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3825,
+						"buffer_size": 4555,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2204,
-								2204
+								1683,
+								1683
 							]
 						],
 						"settings":
@@ -1116,31 +1124,51 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1150,27 +1178,7 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
+								"bh_single_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Nexus (SL).tmTheme",
 							"incomplete_sync": null,
@@ -1182,7 +1190,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 727.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1190,19 +1198,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/shanesteszyn/Projects/sultanauto/css/galleriffic-4.css",
+					"file": "elements/past-work.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2909,
+						"buffer_size": 4663,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1328,
-								1328
+								4561,
+								4561
 							]
 						],
 						"settings":
@@ -1210,31 +1218,51 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1244,135 +1272,22 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
+								"bh_single_quote_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Nexus (SL).tmTheme",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"side_bar_folders_auto_load_folder": 1,
 							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1817.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/shanesteszyn/Projects/sultanauto/loadListings.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2489,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1194,
-								1194
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Nexus (SL).tmTheme",
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"side_bar_folders_auto_load_folder": 1,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
