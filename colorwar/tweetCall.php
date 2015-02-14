@@ -43,5 +43,6 @@ foreach ($json->statuses as $status){
 $keptData['next_results'] = $json->search_metadata->next_results;
 $keptData['refresh_url'] = $json->search_metadata->refresh_url;
 $keptData['tweets'] = $statuses;
-// echo $response;
+
+// echo $response; // let's keep this for now...
 echo json_encode($keptData);

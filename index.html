@@ -1,12 +1,4 @@
 <!doctype html>
-<!--
-Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
 <html>
 <head>
   <title>Steszyn.ca</title>
@@ -19,17 +11,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 
-  <link rel="import" href="bower_components/core-scroll-header-panel/core-scroll-header-panel.html">
-  <link href="bower_components/core-animated-pages/core-animated-pages.html" rel="import">
-  <link href="bower_components/core-transition/core-transition-css.html" rel="import">
-  <link href="bower_components/paper-button/paper-button.html" rel="import">
-  <!-- Elements -->
-  <link rel="import" href="elements/past-work.html">
-  <link rel="import" href="elements/id-card.html">
+  <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+  <link rel="import" href="bower_components/core-animated-pages/transitions/slide-from-right.html">
   <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
   <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
-  <link rel="import" href="bower_components/paper-dialog/paper-action-dialog.html">
+  <link rel="import" href="bower_components/core-icon/core-icon.html">
+  <link rel="import" href="bower_components/core-menu/core-menu.html">
+  <link rel="import" href="bower_components/paper-item/paper-item.html">
+  <link rel="import" href="bower_components/font-roboto/roboto.html">
+  <link rel="import" href="bower_components/core-a11y-keys/core-a11y-keys.html">
+  <link rel="import" href="bower_components/core-ajax/core-ajax.html">
   <link rel="import" href="bower_components/paper-button/paper-button.html">
+
+  <script src="https://rawgit.com/flatiron/director/master/build/director.min.js"></script>
 
 
   <style shim-shadowdom>
@@ -39,37 +34,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       margin: 0;
       background-color: #E5E5E5;
       font-family: 'RobotoDraft', sans-serif;
-    }
-
-
-
-    core-scroll-header-panel {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: #eee;
-    }
-
-    /* background for toolbar when it is at its full size */
-    core-scroll-header-panel::shadow #headerBg {
-      /*background-position:  right 0px bottom -200px;*/
-      background-image: url(images/dragonfly.jpg);
-    }
-    .layer {
-      background-color: rgba(248, 247, 216, 0.7);
-      position: absolute;
-      top: 0;
-      left: 0;
-      box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-      width: 100%;
-      height: 192px;
-    }
-
-    /* background for toolbar when it is condensed */
-    core-scroll-header-panel::shadow #condensedHeaderBg {
-      background-color: #4CAF50;
     }
 
     core-toolbar {
@@ -90,63 +54,124 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       background: #eee;
     }
     paper-button {
+      width:100%;
+      margin: 0px;
+      border-radius: 0px;
       text-transform:none;
+    }
+    [drawer] {
+        box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1);
+        background-color: rgb(231, 238, 238);
+    }
+
+    [main] {
+        height: 100%;
+        background-color: rgb(231, 238, 238);
+    }
+
+    core-animated-pages {
+      width: 100%;
+      height: 100%;
+      -webkit-user-select: none;
+
+    }
+
+    body /deep/ core-toolbar {
+      background-color: #FF9800;
+      color: #fff;
+    }
+
+    core-menu {
+      color: #FF9800;
+      margin: 0 0 0 0;
+    }
+
+    core-menu > paper-item {
+      transition: all 300ms ease-in-out;
+    }
+
+    paper-item a {
+      text-decoration: none;
+      color: currentcolor;
+      margin-left: 5px;
+    }
+
+    core-menu > paper-item.core-selected {
+      background: #e1f5fe;
+    }
+
+    @media all and (max-width: 480px) {
+      core-animated-pages {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .rightContent {
+      position: relative !important;
     }
 
   </style>
 
 </head>
-<body unresolved>
+<body fullbleed vertical layout>
 
-  <core-scroll-header-panel condenses noReveal noDissolve >
+  <template is="auto-binding" id="t">
 
-    <core-toolbar class="tall">
+    <!-- Route controller. -->
+    <flatiron-director route="{{route}}" autoHash></flatiron-director>
 
-      <div flex></div>
-      <core-icon-button icon="more-vert"></core-icon-button>
-      <!-- <div class="bottom  title">Shane Steszyn</div> -->
+    <!-- Keyboard nav controller. -->
+    <core-a11y-keys id="keys" target="{{parentElement}}"
+                    keys="up down left right space space+shift"
+                    on-keys-pressed="{{keyHandler}}"></core-a11y-keys>
 
-    </core-toolbar>
+    <!-- Dynamic content controller -->
+    <core-ajax id="ajax" auto url="{{selectedPage.page.url}}"
+           handleAs="document" on-core-response="{{onResponse}}">
+    </core-ajax>
 
-    <div class="content">
+    <core-scaffold id="scaffold">
 
-      <div class="container" class="core-transition core-transition-bottom" layout vertical center>
-
-        <id-card>
-          <img width="100" height="100" src="../images/avatar.jpg">
-          <h2>Shane Steszyn</h2>
-          <div style="font-size: 22px; padding: 8px 0 16px; color: #888;">
-            A Montréal developer and tech enthusiast.
-          </div>
-          <p>I'm currently an intern at a startup as well as a VP of another, I am learning things as I progress through the field. If you have any questions, whether I do or don't know the answer, I will try my hardest to help out. If you're curious about something, it's likely I am too.</p>
-          <p>Send me an e-mail at:
-            <paper-button class="hover">
-              <a href="mailto:shane@steszyn.ca" target="_blank">shane@steszyn.ca</a>
+      <nav>
+        <core-toolbar>
+          <span>Steszyn.ca</span>
+        </core-toolbar>
+        <core-menu id="menu" valueattr="hash"
+                   selected="{{route}}"
+                   selectedModel="{{selectedPage}}"
+                   on-core-select="{{menuItemSelected}}" on-click="{{ajaxLoad}}">
+          <template repeat="{{page, i in pages}}">
+            <paper-button horizontal start-justified layout hash="{{page.hash}}" class="hover" >
+              <paper-item  noink>
+                <core-icon icon="label{{route != page.hash ? '-outline' : ''}}"></core-icon>
+                {{page.name}}
+              </paper-item>
             </paper-button>
-          </p>
-        </id-card>
+          </template>
+        </core-menu>
+      </nav>
 
+      <core-toolbar tool flex>
+        <div flex>{{selectedPage.page.name}}</div>
+      </core-toolbar>
+
+      <div class="rightContent" layout horizontal center-center fit>
+        <core-animated-pages id="pages" selected="{{route}}" valueattr="hash"
+                             transitions="slide-from-right">
+          <template repeat="{{page, i in pages}}">
+            <section hash="{{page.hash}}" layout vertical center-center>
+              <div style="max-width:100%;">Loading...</div>
+            </section>
+          </template>
+        </core-animated-pages>
       </div>
 
-      <past-work></past-work>
+    </core-scaffold>
 
-    </div>
+  </template>
 
-  </core-scroll-header-panel>
-
-  <script>
-
-    // // custom transformation: scale header's title
-    // var titleStyle = document.querySelector('.title').style;
-    // addEventListener('core-header-transform', function(e) {
-    //   var d = e.detail;
-    //   var m = d.height - d.condensedHeight;
-    //   var scale = Math.max(0.75, (m - d.y) / (m / 0.25)  + 0.75);
-    //   titleStyle.transform = titleStyle.webkitTransform =
-    //       'scale(' + scale + ') translateZ(0)';
-    // });
-
-  </script>
+  <script src="js/routes.js"></script>
 
 </body>
 </html>
