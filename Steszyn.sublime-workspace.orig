@@ -1,0 +1,1316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"selected",
+				"selectedProject"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"has",
+				"hasClass('off"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"Sultan",
+				"SultanAuto"
+			],
+			[
+				"end",
+				"end"
+			],
+			[
+				"addition",
+				"additionals"
+			],
+			[
+				"desc",
+				"Description"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"iss",
+				"isset()	Language Construct"
+			],
+			[
+				"strip",
+				"strip_tags"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"onke",
+				"onkeypress	Attr"
+			],
+			[
+				"onKey",
+				"onkeypress	Attr"
+			],
+			[
+				"FIL",
+				"files"
+			],
+			[
+				"de",
+				"desc"
+			],
+			[
+				"se",
+				"session_destroy"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"inclu",
+				"include_once	Language Construct"
+			],
+			[
+				"docue",
+				"document.documentElement	Document"
+			],
+			[
+				"mcr",
+				"mcrypt_decrypt"
+			],
+			[
+				"requ",
+				"require_once	Language Construct"
+			],
+			[
+				"getel",
+				"getElementById(${0:id})	Element"
+			],
+			[
+				"seasons",
+				"seasonPricesId"
+			],
+			[
+				"season",
+				"seasonPriceId"
+			],
+			[
+				"room",
+				"room_ID"
+			],
+			[
+				"roomPr",
+				"roomPrice_ID"
+			],
+			[
+				"_",
+				"_SESSION"
+			],
+			[
+				"class",
+				"className	Element"
+			],
+			[
+				"pro",
+				"provincial"
+			],
+			[
+				"tax",
+				"taxId"
+			],
+			[
+				"bind_",
+				"bind_param"
+			],
+			[
+				"addi",
+				"additional"
+			],
+			[
+				"pr",
+				"print_r"
+			],
+			[
+				"nbr",
+				"nbrSeason"
+			],
+			[
+				"PRINT",
+				"print_r"
+			],
+			[
+				"seaso",
+				"seasonDescription"
+			],
+			[
+				"activi",
+				"activity_end_date"
+			],
+			[
+				"act",
+				"activity_start_date"
+			],
+			[
+				"confirm",
+				"confirmation_nbr"
+			],
+			[
+				"res",
+				"reservation_ID"
+			],
+			[
+				"comm",
+				"comment"
+			],
+			[
+				"emplo",
+				"employees"
+			],
+			[
+				"tel",
+				"tel2"
+			],
+			[
+				"user",
+				"user_type"
+			],
+			[
+				"password",
+				"password"
+			],
+			[
+				"discountType",
+				"discountType"
+			],
+			[
+				"paymen",
+				"payment_id"
+			],
+			[
+				"card",
+				"cardType"
+			],
+			[
+				"discount",
+				"discount_results"
+			],
+			[
+				"pay",
+				"payment_id"
+			],
+			[
+				"search",
+				"searchLName"
+			],
+			[
+				"ser",
+				"searchResults"
+			],
+			[
+				"roomde",
+				"room_desc"
+			],
+			[
+				"room_desc",
+				"room_desc_short"
+			],
+			[
+				"nbre",
+				"nbrSofaBeds"
+			],
+			[
+				"exec",
+				"curl_exec"
+			],
+			[
+				"manager",
+				"managerID"
+			],
+			[
+				"roo",
+				"room_ID"
+			],
+			[
+				"sear",
+				"searchResults"
+			],
+			[
+				"payment_",
+				"payment_results"
+			],
+			[
+				"char",
+				"charge_results"
+			],
+			[
+				"packag",
+				"package_results"
+			],
+			[
+				"reser",
+				"reservationID"
+			],
+			[
+				"price",
+				"pricepernight"
+			],
+			[
+				"nb",
+				"nbrSeason"
+			],
+			[
+				"sele",
+				"selectedYear"
+			],
+			[
+				"las",
+				"lastReservationID"
+			],
+			[
+				"affected_r",
+				"mysqli_affected_rows()	mysqli Function"
+			],
+			[
+				"fe",
+				"fetch"
+			],
+			[
+				"seas",
+				"season"
+			],
+			[
+				"new_check",
+				"new_checkIn"
+			],
+			[
+				"stm",
+				"stmtTchUp"
+			],
+			[
+				"reservat",
+				"reservations"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"sea",
+				"season_id"
+			],
+			[
+				"mysqli_num_",
+				"mysqli_num_rows()	mysqli Function"
+			],
+			[
+				"cons",
+				"console.log('$0');"
+			],
+			[
+				"availab",
+				"availability"
+			],
+			[
+				"checkOut",
+				"checkOutVal"
+			],
+			[
+				"checkout",
+				"checkOutVal"
+			],
+			[
+				"aval",
+				"availability"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"session_",
+				"session_start"
+			],
+			[
+				"funtio",
+				"function 	Language Construct"
+			],
+			[
+				"forum",
+				"forumPost"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4713,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"tri",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"git diff",
+				"Git: Diff"
+			],
+			[
+				"for",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"form",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"git curr",
+				"Git: Diff Current File"
+			],
+			[
+				"git di",
+				"Git: Diff"
+			],
+			[
+				"tr",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"tra",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"trai",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"diff",
+				"Modific: Show diff"
+			],
+			[
+				"trailing",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git ch",
+				"Git: Checkout"
+			],
+			[
+				"git checkout",
+				"Git: Checkout"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git mer",
+				"Git: Merge"
+			],
+			[
+				"git chec",
+				"Git: Checkout"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git quic",
+				"Git: Quick Add"
+			],
+			[
+				"gid f",
+				"Git: Diff Current File"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git q",
+				"Git: Quick Add"
+			],
+			[
+				"git quci",
+				"Git: Quick Add"
+			],
+			[
+				"todo",
+				"Snippet: Comment - To-do list"
+			],
+			[
+				"dash",
+				"DashDoc: invoke Dash with selected word"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"traili",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"traial",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"trailt",
+				"Trailing Spaces: Toggle Trailing Spaces Highlighting"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git d",
+				"Git: Diff Current File"
+			],
+			[
+				"rever",
+				"Modific: Revert modified part"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"hig",
+				"HighlightWords: Highlight Words"
+			],
+			[
+				"hish",
+				"HighlightWords: Highlight Words"
+			],
+			[
+				"tria",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"revert",
+				"Modific: Revert modified part"
+			],
+			[
+				"git  comm",
+				"Git: Commit"
+			],
+			[
+				"git quick",
+				"Git: Quick Add"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"ind",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"jshin",
+				"JSHint: Set Plugin Options"
+			],
+			[
+				"int",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tod",
+				"Snippet: Comment - To-do list"
+			],
+			[
+				"asc",
+				"ASCII Decorator: Font Selector"
+			],
+			[
+				"snippei",
+				"Snippet: Comment - To-do list"
+			],
+			[
+				"",
+				"ASCII Decorator: Default Font"
+			],
+			[
+				"sftp",
+				"SFTP: Sync Remote -> Local…"
+			],
+			[
+				"sfto",
+				"SFTP: Diff Remote File"
+			],
+			[
+				"format",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"sft",
+				"SFTP: Diff Remote File"
+			],
+			[
+				"commen",
+				"Snippet: Comment - Section header comment"
+			],
+			[
+				"comment sn",
+				"Snippet: Comment - Section header comment"
+			],
+			[
+				"theme ",
+				"Themr: Add current theme to favorites"
+			],
+			[
+				"sf",
+				"SFTP: Diff Remote File"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"frma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"sftp di",
+				"SFTP: Diff Remote File"
+			],
+			[
+				"sftp diff",
+				"SFTP: Diff Remote File"
+			],
+			[
+				"SFTP",
+				"Preferences: SFTP Settings"
+			],
+			[
+				"git new",
+				"Git: Checkout New Branch"
+			],
+			[
+				"git bran",
+				"Git: Checkout New Branch"
+			],
+			[
+				"git",
+				"SublimeGit: Buy License"
+			],
+			[
+				"to",
+				"Toggle Comment"
+			],
+			[
+				"tog",
+				"Toggle Comment"
+			],
+			[
+				"t",
+				"Toggle Comment"
+			],
+			[
+				"comm",
+				"Snippet: Comment - HTML comment"
+			],
+			[
+				"git add",
+				"Git: Quick Add"
+			],
+			[
+				"g",
+				"Git: Commit"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ac",
+				"Achievement: View Achievements"
+			],
+			[
+				"achi",
+				"Achievement: View Achievements"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"da",
+				"DashDoc: invoke Dash with selected word"
+			],
+			[
+				"theme",
+				"Themr: Next theme"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"instk",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/shanesteszyn/Projects/Steszyn.ca",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components/core-transition",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components/paper-dialog",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/elements"
+	],
+	"file_history":
+	[
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/.gitignore",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/elements/past-work.html",
+		"/Users/shanesteszyn/Projects/sultanauto/loadListings.php",
+		"/Users/shanesteszyn/Projects/sultanauto/css/galleriffic-4.css",
+		"/Users/shanesteszyn/Projects/sultanauto/deleteImg.php",
+		"/Users/shanesteszyn/Projects/sultanauto/details.php",
+		"/Users/shanesteszyn/Projects/sultanauto/mail.php",
+		"/Users/shanesteszyn/Projects/sultanauto/listings.php",
+		"/Users/shanesteszyn/Projects/sultanauto/index.php",
+		"/Users/shanesteszyn/Projects/sultanauto/header_template.php",
+		"/Users/shanesteszyn/Projects/sultanauto/static/css/style.css",
+		"/Users/shanesteszyn/Projects/sultanauto/footer_template.php",
+		"/Applications/XAMPP/xamppfiles/etc/php.ini",
+		"/Applications/XAMPP/xamppfiles/etc/httpd.conf",
+		"/Users/shanesteszyn/Desktop/Steps",
+		"/Users/shanesteszyn/Projects/sultanauto/quickInsert.php",
+		"/Users/shanesteszyn/Projects/sultanauto/static/css/contact.css",
+		"/Users/shanesteszyn/Projects/sultanauto/deleteListing.php",
+		"/Users/shanesteszyn/Projects/sultanauto/uploadFile.php",
+		"/Users/shanesteszyn/Projects/sultanauto/updateCar.php",
+		"/Users/shanesteszyn/Downloads/ui-kit-contacts/index.html",
+		"/Users/shanesteszyn/Projects/sultanauto/contact.php",
+		"/Users/shanesteszyn/Projects/sultanauto/static/css/contactStyle.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/create/insert_reservation_multi.php",
+		"/Users/shanesteszyn/Projects/sultanauto/insertCar.php",
+		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
+		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-userdir.conf",
+		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-xampp.conf",
+		"/private/etc/hosts",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/searchResult_Detail.php",
+		"/Users/shanesteszyn/Projects/sultanauto/js/jquery.form.min.js",
+		"/Users/shanesteszyn/Projects/sultanauto/newCarAdmin.php",
+		"/Users/shanesteszyn/Downloads/listings.sql",
+		"/Users/shanesteszyn/Projects/sultanauto/details",
+		"/Users/shanesteszyn/Projects/sultanauto/includes/connection.php",
+		"/Users/shanesteszyn/Downloads/sultanauto.sql",
+		"/Users/shanesteszyn/Projects/SultanAuto copy/includes/connection.php",
+		"/Users/shanesteszyn/Projects/SultanAuto/static/css/loginstyle.css",
+		"/Users/shanesteszyn/Projects/SultanAuto/static/css/style.css",
+		"/Users/shanesteszyn/Projects/SultanAuto/startup/flat-ui/css/flat-ui.css",
+		"/Users/shanesteszyn/Projects/SultanAuto/makenewadmin.php",
+		"/Users/shanesteszyn/Projects/SultanAuto/details.php",
+		"/Users/shanesteszyn/Projects/SultanAuto/js/npm.js",
+		"/Users/shanesteszyn/Projects/SultanAuto/includes/connection.php",
+		"/Users/shanesteszyn/Projects/SultanAuto/sultanlogin.php",
+		"/Users/shanesteszyn/Projects/SultanAuto/insertCar.php",
+		"/Users/shanesteszyn/JACfs/public_html/smarty/templates/music.html",
+		"/Users/shanesteszyn/Projects/SultanAuto/deleteListing.php",
+		"/private/var/folders/wd/432hmmrn4tv_hzdnsjxbsj_m0000gn/T/fz3temp-1/connection.php",
+		"/private/var/folders/wd/432hmmrn4tv_hzdnsjxbsj_m0000gn/T/fz3temp-1/connection 2.php",
+		"/Users/shanesteszyn/Projects/SultanAuto/listings.php",
+		"/Users/shanesteszyn/Projects/SultanAuto/header_template.php",
+		"/Users/shanesteszyn/Projects/SultanAuto/index.php",
+		"/Users/shanesteszyn/Projects/SultanAuto/upload",
+		"/Users/shanesteszyn/Projects/SultanAuto/includes",
+		"/Users/shanesteszyn/Projects/SultanAuto/js/gallerific.min.js",
+		"/Users/shanesteszyn/Projects/SultanAuto/js/gallerific.js.min",
+		"/Users/shanesteszyn/Projects/SultanAuto/footer_template.php",
+		"/Applications/XAMPP/xamppfiles/apache2/conf/httpd.conf",
+		"/Users/shanesteszyn/Projects/SultanAuto/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/insert_rooms.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/make_payment.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/.data/cle.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/package_dropdown_list.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/create/confirm_reservation_seasonDate_test.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/create/insert_reservation.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/delete_reservation.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/update_reservation.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/modify_reservation.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/modify_payment.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/discount_dropdown_list.php",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/css/loginstyle.css",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/cancellation_payment.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/insert_delete_payment.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_taxes_master_list.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/manage_taxes.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/insert_payment.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/view/view_reservation.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/insert_taxes.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/template_header.php",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/static/css/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/update_payment.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/create/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/insert_employees.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/add_room.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reports/maintenanceReport_resultSet.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/startup/ui-kit/ui-kit-content/css/content35style.css.min",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/delete_payment.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reports/checkinReport.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/view/view_calendar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/insert_holidays.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/check_in.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/create/create_reservation.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/modify_discount.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/manage_rooms.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/manage_rooms - Copy.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/manage_holidays.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_employee_master_list.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/manage_employees.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/manage_discounts.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_season_master_list.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/action/fastEntry2.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/manage_seasons.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/modify_reservation3.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/functions/roomFinancial.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/create/confirm_reservation_seasonDate_multipleRooms.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/room_dropdown.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/room_dropdown_confirm.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/statutoryHoliday_details.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/index.php.org",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reports/checkoutReport.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reports/maintenanceReport.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/functions/accounting.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/modify_confirm_reservation.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/action/fastEntry2Confirm.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/room_dropdown_list.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/discount_dropdown_list_all.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/discount_details.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_room_master_list2.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_room_master_list.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_holiday_master_list.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_charge.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_discount_master_list.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/update_reservation_discount.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/additional_charge_list.php"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 540.0,
+		"where_history":
+		[
+			"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin",
+			"/Users/shanesteszyn/Projects/sultanauto",
+			"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/",
+			"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation",
+			"insert_reservation.php",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"content",
+			"20px",
+			"http",
+			"php_http.dll",
+			"extension=php_http.dll",
+			"delete",
+			"insertim",
+			"images",
+			"page",
+			"animat",
+			"keyboa",
+			"gallerr",
+			"gall",
+			"valida",
+			"cont",
+			"conta",
+			"cont",
+			"negotiab",
+			"contacts-5 ",
+			"section",
+			"map",
+			"contact",
+			"map",
+			"remove ima",
+			"$id",
+			"POST",
+			"removeImageByIndexLink",
+			"col-sm-5 container panel panel-default",
+			"navigat",
+			"500px",
+			"print",
+			"insert_id",
+			"content.js",
+			"\"file\"",
+			"\"image\"",
+			"console.log",
+			"mileag",
+			"carMile",
+			"upload",
+			"userdir",
+			"file[]",
+			"add_mor",
+			"userdir",
+			"mean",
+			"windo",
+			"post",
+			"file\"",
+			"\"galleryFile\"",
+			"add",
+			"galleryForm",
+			"\"galleryFile\"",
+			"\"file\"",
+			"galleryf",
+			"gallery",
+			"addima",
+			"POST",
+			"addimage",
+			"addImage",
+			"galler",
+			"addim",
+			"addImage",
+			"addImageLink",
+			"file",
+			"previ",
+			"addIma",
+			"insert",
+			"car-",
+			"listing-",
+			"image",
+			"preview",
+			"previe",
+			"insert",
+			"varian",
+			"variants",
+			"nego",
+			"scroll",
+			"header",
+			"header\\",
+			"header",
+			"removeima",
+			"remove",
+			"caption",
+			"cation",
+			"btn",
+			"docume",
+			"br/>",
+			"br ",
+			"br",
+			"ready",
+			"price",
+			"nego",
+			"lizard",
+			"removeimagebyha",
+			"lizard",
+			"selected",
+			"\\<div class\\=\\\"download\\\"\\>\n.*\\<a href=\\\".*\\\"\\>Download Original\\<\\/a\\>\n.*\\<\\/div\\>",
+			"<div class=\"download\">\n.*<a href=\".*\">Download Original</a>\n.*</div>",
+			"<div class=\"download\">",
+			"<div class=\"download\">\n.*<a href=\".*\">Download Original</a>\n.*</div>",
+			"<div class=\"download\">.*\n<a href=\".*\">Download Original</a>.*\n</div>",
+			"<div class=\"download\">.*\n<a href=\"*\">Download Original</a>.*\n</div>",
+			"<div class=\"download\">\n									<a href=\"*\">Download Original</a>\n								</div>",
+			"<div class=\"download\">\n									<a href=\".*\">Download Original</a>\n								</div>",
+			"opacit",
+			"tem",
+			"templa",
+			"index",
+			"hist",
+			"histro",
+			"histo",
+			"history",
+			"HISTOR",
+			"post",
+			"thumb",
+			"pct",
+			"carListings",
+			"file",
+			"checkbox",
+			"';\n",
+			"';",
+			"':",
+			"auto",
+			"background-colo",
+			".caret",
+			"pen",
+			"user",
+			"users/*",
+			"header"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"400px",
+			"\"image\"",
+			"\"file\"",
+			"file",
+			"image\"",
+			"\"file[]\"",
+			"\"file\"",
+			"\"galleryFile\"",
+			"manual",
+			"",
+			"getElementById",
+			"POST",
+			"GET",
+			"decrypt",
+			"POST",
+			"expYYYY",
+			"expMM",
+			"POST",
+			"tax_value",
+			"addRow_tax",
+			"removeRow_tax",
+			"tax_timesUsed",
+			"tax_additional",
+			"tax_federal",
+			"tax_count",
+			"tax_provincial",
+			"$conn->real_escape_string",
+			"<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js\"></script>\n<link rel=\"stylesheet\" href=\"//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css\" />\n<script src=\"//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js\"></script>\n<style type=\"text/css\">\n    #ui-datepicker-div\n    {\n        z-index: 100 !important;\n    }\n</style>",
+			"<link rel=\"stylesheet\" href=\"//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css\" />\n<script src=\"//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js\"></script>\n<style type=\"text/css\">\n    #ui-datepicker-div\n    {\n        z-index: 100 !important;\n    }\n</style>",
+			"fetch()",
+			", ",
+			", $",
+			"row",
+			"$",
+			"",
+			",",
+			"\"",
+			"\"'Gill Sans'\"",
+			"\"Gill Sans\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4241,
+								4241
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Nexus (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"side_bar_folders_auto_load_folder": 1,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 274.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.figlet_preview":
+	{
+		"height": 273.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-checkout":
+	{
+		"height": 98.0
+	},
+	"output.git-commit":
+	{
+		"height": 98.0
+	},
+	"output.git-merge":
+	{
+		"height": 98.0
+	},
+	"output.git-pull":
+	{
+		"height": 98.0
+	},
+	"output.git-push":
+	{
+		"height": 98.0
+	},
+	"output.sftp":
+	{
+		"height": 98.0
+	},
+	"project": "/Users/shanesteszyn/Projects/SultanAuto/SultanAuto.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"test",
+				"innbook/de/test.html"
+			],
+			[
+				"",
+				"innbook/.idea/modules.xml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Applications/XAMPP/xamppfiles/htdocs/innbook/Innbook.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
