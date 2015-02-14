@@ -371,25 +371,21 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4555,
+				"buffer_size": 4713,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "elements/past-work.html",
-			"settings":
-			{
-				"buffer_size": 4663,
-				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 151.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"tri",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
 			[
 				"git diff",
 				"Git: Diff"
@@ -416,10 +412,6 @@
 			],
 			[
 				"tra",
-				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"tri",
 				"Trailing Spaces: Delete Trailing Spaces"
 			],
 			[
@@ -759,11 +751,13 @@
 		"/Users/shanesteszyn/Projects/Steszyn.ca",
 		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components",
 		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components/core-transition",
-		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components/paper-button",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/bower_components/paper-dialog",
 		"/Users/shanesteszyn/Projects/Steszyn.ca/elements"
 	],
 	"file_history":
 	[
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/.gitignore",
+		"/Users/shanesteszyn/Projects/Steszyn.ca/elements/past-work.html",
 		"/Users/shanesteszyn/Projects/sultanauto/loadListings.php",
 		"/Users/shanesteszyn/Projects/sultanauto/css/galleriffic-4.css",
 		"/Users/shanesteszyn/Projects/sultanauto/deleteImg.php",
@@ -849,7 +843,6 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/update_payment.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/create/index.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/manage/insert_employees.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/innbook/.gitignore",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/add_room.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reports/maintenanceReport_resultSet.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/startup/ui-kit/ui-kit-content/css/content35style.css.min",
@@ -890,8 +883,7 @@
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_charge.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_discount_master_list.php",
 		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/admin/reservation/update/update_reservation_discount.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/additional_charge_list.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/addRow/modify/modify_package.php"
+		"/Applications/XAMPP/xamppfiles/htdocs/innbook/en/includes/lists/additional_charge_list.php"
 	],
 	"find":
 	{
@@ -1108,15 +1100,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4555,
+						"buffer_size": 4713,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1683,
-								1683
+								4241,
+								4241
 							]
 						],
 						"settings":
@@ -1124,61 +1116,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
 							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Nexus (SL).tmTheme",
 							"incomplete_sync": null,
@@ -1190,104 +1182,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 216.0,
+						"translation.y": 274.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "elements/past-work.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4663,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4561,
-								4561
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Nexus (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"side_bar_folders_auto_load_folder": 1,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1817.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1389,7 +1287,7 @@
 		[
 			[
 				"",
-				"~/Projects/SultanAuto/SultanAuto.sublime-project"
+				"/Applications/XAMPP/xamppfiles/htdocs/innbook/Innbook.sublime-project"
 			]
 		],
 		"width": 380.0
