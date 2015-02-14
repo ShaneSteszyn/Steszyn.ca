@@ -53,7 +53,7 @@
     paper-button.hover:hover {
       background: #eee;
     }
-    paper-button {
+    paper-button.drawer {
       width:100%;
       margin: 0px;
       border-radius: 0px;
@@ -142,7 +142,7 @@
                    selectedModel="{{selectedPage}}"
                    on-core-select="{{menuItemSelected}}" on-click="{{ajaxLoad}}">
           <template repeat="{{page, i in pages}}">
-            <paper-button horizontal start-justified layout hash="{{page.hash}}" class="hover" >
+            <paper-button horizontal start-justified layout hash="{{page.hash}}" class="hover drawer" >
               <paper-item  noink>
                 <core-icon icon="label{{route != page.hash ? '-outline' : ''}}"></core-icon>
                 {{page.name}}
