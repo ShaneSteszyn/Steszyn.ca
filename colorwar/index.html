@@ -19,85 +19,115 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
 
-  <link rel="import" href="../bower_components/core-scroll-header-panel/core-scroll-header-panel.html">
+  <link rel="import" href="../bower_components/core-header-panel/core-header-panel.html">
   <link href="../bower_components/core-animated-pages/core-animated-pages.html" rel="import">
   <link href="../bower_components/core-transition/core-transition-css.html" rel="import">
   <link href="../bower_components/paper-button/paper-button.html" rel="import">
   <!--Elements-->
-  <link rel="import" href="../elements/past-work.html">
-  <link rel="import" href="../elements/id-card.html">
+  <link rel="import" href="../elements/tweet-battlefield.html">
   <link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
   <link rel="import" href="../bower_components/core-icon-button/core-icon-button.html">
   <link rel="import" href="../bower_components/paper-dialog/paper-action-dialog.html">
   <link rel="import" href="../bower_components/paper-button/paper-button.html">
+  <link rel="import" href="../bower_components/core-icons/core-icons.html">
+  <link rel="import" href="../bower_components/core-animated-pages/core-animated-pages.html">
 
 
-  <style shim-shadowdom>
-
-    html,body {
-      height: 100%;
-      margin: 0;
-      background-color: #E5E5E5;
-      font-family: 'RobotoDraft', sans-serif;
+  <style>
+    body {
+      font-family: sans-serif;
     }
 
-
-
-    core-scroll-header-panel {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: #eee;
+    .toolbar {
+      background-color: steelblue;
     }
 
-    /* background for toolbar when it is at its full size */
-    core-scroll-header-panel::shadow #headerBg {
-      /*background-position:  right 0px bottom -200px;*/
-      background-image: url(images/dragonfly.jpg);
-    }
-    .layer {
-      background-color: rgba(248, 247, 216, 0.7);
-      position: absolute;
-      top: 0;
-      left: 0;
-      box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-      width: 100%;
-      height: 192px;
+    #container {
+      overflow: hidden;
     }
 
-    /* background for toolbar when it is condensed */
-    core-scroll-header-panel::shadow #condensedHeaderBg {
-      background-color: #4CAF50;
+    #noscroll {
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
-    core-toolbar {
-      color: #f1f1f1;
-      fill: #f1f1f1;
-      background-color: transparent;
+    .card {
+      position: relative;
+      height: 100vh;
+      width: 50vh;
+      font-size: 50px;
+      background-color: tomato;
+      cursor: default;
     }
 
-    .title {
-      font-size: 40px;
-    }
-
-    .content {
-      /*margin: 60px 60px 60px 0;*/
-      padding: 8px;
-    }
-    paper-button.hover:hover {
-      background: #eee;
-    }
-    paper-button {
-      text-transform:none;
+    .view {
+      font-size: 250px;
+      background-color: tomato;
     }
 
   </style>
 
 </head>
-<body unresolved>
-  <h1>TWITTER COLOR WAR</h1>
+<body unresolved fullbleed vertical layout>
+  <template is="auto-binding">
+    <core-toolbar class="toolbar">
+      <core-icon-button icon="{{$.pages.selected != 0 ? 'arrow-back' : 'menu'}}" on-tap="{{back}}"></core-icon-button>
+      <div flex>Stuff</div>
+      <core-icon-button icon="more-vert"></core-icon-button>
+    </core-toolbar>
+    <core-animated-pages id="pages" flex selected="0" on-core-animated-pages-transition-end="{{transitionend}}" transitions="cross-fade-all hero-transition">
 
+      <section vertical layout>
+
+        <div id="noscroll" fit hero-p>
+          <div id="container" flex horizontal wrap around-justified layout cross-fade>
+            <template repeat="{{item in items}}">
+              <div class="card" style="background-color: {{item.bgCol}}; width: {{width}}" vertical center center-justified layout hero-id="item-{{item.id}}" hero?="{{$.pages.selected === item.id + 1 || lastSelected === item.id + 1}}" on-tap="{{selectView}}"><span cross-fade>{{item.id}}</span></div>
+            </template>
+          </div>
+        </div>
+
+      </section>
+
+      <template repeat="{{item in items}}">
+        <section horizontal layout>
+          <div class="view" style="background-color: {{item.bgCol}};" flex vertical center center-justified layout hero-id="item-{{item.id}}" hero?="{{$.pages.selected === item.id + 1 || $.pages.selected === 0}}"><span cross-fade>{{item.id}}</span></div>
+        </section>
+      </template>
+
+    </core-animated-pages>
+  </template>
+  <script>
+
+  addEventListener('template-bound', function(e) {
+    var scope = e.target;
+    //GET TWEETS HERE
+    var items = [], count=5;
+    for (var i=0; i < count; i++) {
+      items.push({"id": i, "bgCol": "#dd" + i*2});
+    }
+    width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) / items.length;
+    scope.width = width + "px";
+    scope.items = items;
+
+    scope.selectView = function(e) {
+      var i = e.target.templateInstance.model.item.id;
+      this.$.pages.selected = i+1;
+    }
+
+    scope.back = function() {
+      this.lastSelected = this.$.pages.selected;
+      console.log(this.lastSelected);
+      this.$.pages.selected = 0;
+    }
+
+    scope.transitionend = function() {
+      if (this.lastSelected) {
+        this.lastSelected = null;
+      }
+    }
+  })
+
+  </script>
 </body>
 </html>
