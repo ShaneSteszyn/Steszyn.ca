@@ -24,4 +24,24 @@ $response =  $twitter->setGetfield($getfield)
     ->buildOauth($url, $requestMethod)
     ->performRequest();
 
-echo $response;
+$json = json_decode($response);
+
+foreach ($json->statuses as $status){
+	$keepThis = [];
+	$keepThis['text'] = $status->text;
+	foreach ($status->entities->hashtags as $hashtag) {
+		if (strtolower($hashtag->text) == "blue" || strtolower($hashtag->text) == "red"){ //check if color, should match json
+			$keepThis['hashtags'][] = $hashtag->text;
+		}
+	}
+
+	if (count($keepThis['hashtags']) > 0){ //Acutally keep it if color is mentioned
+		$statuses[] = $keepThis;
+	}
+}
+
+$keptData['next_results'] = $json->search_metadata->next_results;
+$keptData['refresh_url'] = $json->search_metadata->refresh_url;
+$keptData['tweets'] = $statuses;
+// echo $response;
+echo json_encode($keptData);
