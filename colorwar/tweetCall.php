@@ -27,22 +27,31 @@ $response =  $twitter->setGetfield($getfield)
 $json = json_decode($response);
 
 foreach ($json->statuses as $status){
-	$keepThis = [];
-	$keepThis['text'] = $status->text;
+	// $colors[] = new stdClass();
 	foreach ($status->entities->hashtags as $hashtag) {
 		if (strtolower($hashtag->text) == "blue" || strtolower($hashtag->text) == "red"){ //check if color, should match json
-			$keepThis['hashtags'][] = $hashtag->text;
+			$colorText = strtolower($hashtag->text);
+			if(!isset($colors[$colorText])){
+				$colors[$colorText] = new stdClass();
+			}
+			$colors[$colorText]->color = $hashtag->text;
+			$colors[$colorText]->tweets[] = $status->text;
+			break;
 		}
 	}
 
-	if (count($keepThis['hashtags']) > 0){ //Acutally keep it if color is mentioned
-		$statuses[] = $keepThis;
-	}
 }
+$i=0;
+foreach ($colors as $color) {
+	$color->id=$i++;
+	$jsonReadyColors[] = $color;
+}
+
 
 $keptData['next_results'] = $json->search_metadata->next_results;
 $keptData['refresh_url'] = $json->search_metadata->refresh_url;
-$keptData['tweets'] = $statuses;
+$keptData['colors'] = $jsonReadyColors;
 
-// echo $response; // let's keep this for now...
 echo json_encode($keptData);
+// echo $response; // let's keep this for now...
+
