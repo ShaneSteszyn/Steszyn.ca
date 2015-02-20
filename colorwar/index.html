@@ -30,8 +30,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="import" href="../bower_components/paper-button/paper-button.html">
   <link rel="import" href="../bower_components/core-icons/core-icons.html">
   <link rel="import" href="../bower_components/core-ajax/core-ajax.html">
-  <link rel="import" href="../bower_components/core-list/core-list.html">
-  <link rel="import" href="../bower_components/paper-shadow/paper-shadow.html">
 
 
   <style>
@@ -49,45 +47,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     #noscroll {
       overflow-x: hidden;
-      overflow-y: hidden;
+      overflow-y: auto;
     }
 
-     .card {
-      display: inline-block;
-      background: white;
-      box-sizing: border-box;
-      width: 90%;
-      height: auto;
-      margin: 16px;
-      padding: 16px;
-      border-radius: 2px;
-    }
-
-    .color {
+    .card {
       position: relative;
       height: 100vh;
       width: 50vh;
       font-size: 50px;
+      background-color: tomato;
       cursor: default;
     }
 
-    p {
-      font-size: 1em;
+    .view {
+      font-size: 250px;
+      background-color: tomato;
     }
 
-    core-list {
-      height: 100%;
-    }
-
-    .toolbar {
-      background: #FF9800;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-      color: white;
-    }
-
-    .primary {
-      font-size: 1.5em;
-    }
   </style>
 
 </head>
@@ -96,7 +72,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <core-toolbar class="toolbar">
       <core-icon-button icon="{{$.pages.selected != 0 ? 'arrow-back' : 'menu'}}" on-tap="{{back}}"></core-icon-button>
-      <div flex>Twitter turf war.</div>
+      <div flex>Stuff</div>
       <core-icon-button icon="more-vert"></core-icon-button>
     </core-toolbar>
 
@@ -107,37 +83,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div id="noscroll" fit hero-p>
           <div id="container" flex horizontal wrap around-justified layout cross-fade>
             <template repeat="{{item in items}}">
-
-              <div class="color" style="background-color: {{item.colorHex}}; width:{{item.width}}; font-size: {{item.fontSize}}; color: {{item.altColorHex}};" vertical center center-justified layout hero-id="item-{{item.id}}" hero?="{{$.pages.selected === item.id + 1 || lastSelected === item.id + 1}}" on-tap="{{selectView}}">
-                <span cross-fade>
-                {{item.color}}
-                </span>
-              </div>
-
+              <div class="card" style="background-color: red; width:{{width}}" vertical center center-justified layout hero-id="item-{{item.id}}" hero?="{{$.pages.selected === item.id + 1 || lastSelected === item.id + 1}}" on-tap="{{selectView}}"><span cross-fade>{{item.color}}</span></div>
             </template>
           </div>
         </div>
 
       </section>
-
+      
       <template repeat="{{item in items}}">
 
         <section horizontal layout>
-          <div class="view" style="background-color: {{item.colorHex}};" flex vertical center center-justified layout hero-id="item-{{item.id}}" hero?="{{$.pages.selected === item.id + 1 || $.pages.selected === 0}}">
-            <span cross-fade>
-              <div fit style="overflow:auto;">
-                <core-list data="{{item.tweets}}" height="80">
-                  <template>
-                    <div class="item {{ {selected: selected} | tokenList }}">
-                    <paper-shadow z="1" class="card">
-                      <div class="primary">{{model.text}}</div>
-                    </paper-shadow>
-                    </div>
-                  </template>
-                </core-list>
-              </div>
-            </span>
-          </div>
+          <div class="view" style="background-color: blue; " flex vertical center center-justified layout hero-id="item-{{item.id}}" hero?="{{$.pages.selected === item.id + 1 || $.pages.selected === 0}}"><span cross-fade>{{item.id}}</span></div>
         </section>
 
       </template>
@@ -152,7 +108,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   addEventListener('template-bound', function(e) {
     var scope = e.target;
-    var totalTweets = 0;
     var colors = [];
     var items;
     // var items;
@@ -161,25 +116,68 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     e.target.ajaxHandler = function(event) {
       items = event.target.response;
       var count = items.colors.length;
-      for (var i=0; i < count; i++) {
-        var current = items.colors[i];
-        var curWidth = (current.tweets.length / items.totalColors) * 100;
-        var fontSize = (current.tweets.length / items.totalColors) * 5; //get font size, (em)
 
-        colors.push({"id": i, "color": current.color, tweets: current.tweets, width: curWidth + "vw" , colorHex: current.code[0], altColorHex: current.code[1], fontSize: fontSize+"em"});
+      for (var i=0; i < count; i++) {
+        colors.push({"id": i, "color": items.colors[i].color, tweets: items.colors[i].tweets });
       }
 
       width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) / colors.length;
-      scope.width = width + "vw";
+      scope.width = width + "px";
       scope.items = colors;
     }
 
+    //LOCAL TESTING
+
+    // var items = {
+    //   "next_results": "?max_id=567057682105118719&q=%23blue%2BOR%2B%23red&include_entities=1",
+    //   "refresh_url": "?since_id=567058035747852291&q=%23blue%2BOR%2B%23red&include_entities=1",
+    //   "colors": [
+    //     {
+    //       "id": "0",
+    //       "color": "red",
+    //       "tweets": [
+    //         "it's a Gopher rainbow http://t.co/nU8K0dNJSg #shirt #kid #s6 #gopher #red #rainbow http://t.co/ZJ8jRVsMhZ",
+    //         "RT @CitySewist: #Beautiful #Red #Kravet #etsyhmw #decor #CraftShout #shophandmade #homedecor #etsy #forsale http://t.co/CXZksjwDdN http://t…",
+    //         "RT @CitySewist: #Beautiful #Red #Kravet #etsyhmw #decor #CraftShout #shophandmade #homedecor #etsy #forsale http://t.co/ltV2rYhagg http://t…",
+    //         "https://t.co/YZaU6oRwKo Denim Rhinestone earrings from MOCKFROGjewelry #denim #red #rhinestone #recycle http://t.co/HxJwOFqb4d",
+    //         "RT @vickyvette: ... #Roses are #Red! A NEW pic I haven't posted on #Twitter before! RT if you like! http://t.co/eYF9XnNIaE",
+    //         "RT @Luxurry_cars: #cars #porsche #911 #red (via : http://t.co/rTSW0u39UE) http://t.co/lyEiRQn95g",
+    //         "Photo: #Red http://t.co/sjHoVUWY1y",
+    //         "RT @Jewelers_JA: Lots of #black and #red moments on the #runway at @carmenmarcvalvo #NYFW #mbfw #style #fashion… http://t.co/Zu8rOYn8lw",
+    //         "sunday funday ~ #kisses #me #polishgirl #girl #funny #stupid #student #belieber #red #longhair… http://t.co/ibJbAh7pEg",
+    //         "RT @MonicaBeIIucci: #love #red #vanityfair #italia #cover http://t.co/9fLAErS7BH"
+    //       ]
+    //     },
+    //     {
+    //       "color": "blue",
+    //       "id": "1",
+    //       "tweets": [
+    //         "#Firenze Piazza della #Signoria #orablu #blue #light #Florence #Toscana #Tuscany http://t.co/Ch6Y5KJuTQ",
+    //         "RT @NASA_Astronauts: “Only one place on Earth where you can spot this shade of #blue. #Bahamas” #AstroButch http://t.co/JzVFL45QuB",
+    //         "#lovethisface #Blue #GreatDanePuppy #GreatDane #WhySoSerious #stopmom http://t.co/r3qNueYS1R",
+    //         "RT @NASA_Astronauts: “Only one place on Earth where you can spot this shade of #blue. #Bahamas” #AstroButch http://t.co/JzVFL45QuB",
+    //         "RT @hardyplants: #Blue .... PULMONARIA 'Blue Ensign' , ANCHUSA 'Loddon Royalist' and IRIS 'Jane Phillips' http://t.co/AK8cfFKDG9"
+    //       ]
+    //     }
+    //   ]
+    // };
+    //  var colors = [], count=items.colors.length;
+    // for (var i=0; i < count; i++) {
+    //   colors.push({"id": i, "color": items.colors[i].color, tweets: items.colors[i].tweets });
+    // }
+
+    // width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) / colors.length;
+    // scope.width = width + "px";
+    // scope.items = colors;
+
+    console.log(colors);
     scope.selectView = function(e) {
       var i = e.target.templateInstance.model.item.id;
       this.$.pages.selected = i+1;
     }
     scope.back = function() {
       this.lastSelected = this.$.pages.selected;
+      console.log(this.lastSelected);
       this.$.pages.selected = 0;
     }
     scope.transitionend = function() {
