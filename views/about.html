@@ -1,4 +1,26 @@
-<link rel="import" href="../elements/id-card.html">
+
+<style>
+  id-card {
+    border: 1px solid #bebebe;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #555;
+  }
+  .card-header {
+    margin-bottom: 10px;
+  }
+  .card-header > h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .card-header > img {
+    border-radius: 50%;
+    margin: 5px;
+  }
+</style>
  <div class="content" flex>
   <div class="container" class="core-transition core-transition-bottom" layout vertical center>
 
@@ -9,7 +31,7 @@
         A Montréal developer and tech enthusiast.
       </div>
       <p>I'm currently an intern at a startup as well as a VP of another, I am learning things as I progress through the field. If you have any questions, whether I do or don't know the answer, I will try my hardest to help out. If you're curious about something, it's likely I am too.</p>
-      <p>Send me an e-mail at:
+      <p layout horizontal center>Send me an e-mail at:
         <paper-button class="hover">
           <a href="mailto:shane@steszyn.ca" target="_blank">shane@steszyn.ca</a>
         </paper-button>

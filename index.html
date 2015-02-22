@@ -20,9 +20,10 @@
   <link rel="import" href="bower_components/core-menu/core-menu.html">
   <link rel="import" href="bower_components/paper-item/paper-item.html">
   <link rel="import" href="bower_components/font-roboto/roboto.html">
-  <link rel="import" href="bower_components/core-a11y-keys/core-a11y-keys.html">
   <link rel="import" href="bower_components/core-ajax/core-ajax.html">
   <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="../elements/id-card.html">
+  <link rel="import" href="../elements/past-work.html">
 
   <script src="https://rawgit.com/flatiron/director/master/build/director.min.js"></script>
 
@@ -106,7 +107,7 @@
         height: 100%;
       }
     }
-  
+
     .rightContent {
       position: relative !important;
     }
@@ -156,11 +157,11 @@
         <div flex>{{selectedPage.page.name}}</div>
       </core-toolbar>
 
-      <div class="rightContent" layout horizontal center-center fit>
+      <div class="rightContent" layout horizontal fit>
         <core-animated-pages id="pages" selected="{{route}}" valueattr="hash"
                              transitions="slide-from-right">
           <template repeat="{{page, i in pages}}">
-            <section hash="{{page.hash}}" layout vertical center-center>
+            <section hash="{{page.hash}}" layout vertical>
               <div style="width:100%">Loading...</div>
             </section>
           </template>
