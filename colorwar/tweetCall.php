@@ -64,7 +64,6 @@ foreach ($json->statuses as $status){
 			$tweet->index = $colorCount[$colorText]++;
 			$colors[$colorText]->tweets[] = $tweet;
 			$count++;
-			break;
 		}
 	}
 
@@ -80,30 +79,6 @@ foreach ($colors as  $key => $color) {
 
 $keptData['next_results'] = $json->search_metadata->next_results;
 $keptData['refresh_url'] = $json->search_metadata->refresh_url;
-// if (!isset($_POST['refresh'])){
-// 	$keptData['colorCodes'] = '{
-// 								"red": "#F44336",
-// 								"pink": "#E91E63",
-// 								"purple": "#9C27B0",
-// 								"deeppurple": "#673AB7",
-// 								"indigo": "#3F51B5",
-// 								"blue": "#2196F3",
-// 								"lightblue": "#03A9F4",
-// 								"cyan": "#00BCD4",
-// 								"teal": "#009688",
-// 								"green": "#4CAF50",
-// 								"lime": "#CDDC39",
-// 								"yellow": "#FFEB3B",
-// 								"amber": "#FFC107",
-// 								"orange": "#FF9800",
-// 								"deeporange": "#FF5722",
-// 								"brown": "#795548",
-// 								"grey": "#9E9E9E",
-// 								"bluegrey": "#607D8B",
-// 								"black": "#000000",
-// 								"white": "#FFFFFF"
-// 							}';
-// 	}
 $keptData['colors'] = $jsonReadyColors;
 $keptData['totalColors'] = $count;
 
