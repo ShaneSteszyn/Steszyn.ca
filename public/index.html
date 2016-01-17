@@ -5,16 +5,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>if (!window.jQuery) { document.write('<script src="jquery.js"><\/script>'); }</script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-61456096-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
   <style>
     #speed {
       display: none;
@@ -29,7 +19,7 @@
   (function() {2
     var nl, openCSS, openAnim, animCount, markup, styles, time, writeStyleChar, writeStyles, paused;
 
-    text = "\n/*\n * This is \n * What I want to do \n * With Steszyn.ca\n */\n \n#speed h4 {\n  display: inline-block; margin: 5px;\n}\n#speed .l {\n  float: left; margin: 1px 5px;\n}\n.pre { \n  overflow: auto;\n  position: fixed; width: 35%;\n  padding: 24px 12px;\n  top: 90px; height: 25%; left: 26%;\n}\n.pre, #speed {\n  background-color: #313744; color: #a6c3d4;\n  transition: left 500ms;\n  border: 1px solid rgba(0,0,0,0.2);\n  box-sizing: border-box;\n  border-radius: 3px;\n  box-shadow: 0px 4px 0px 2px rgba(0,0,0,0.1);\n}\n/*\n * Move these over...\n */\n.pre, #speed {\n  left: 60% \n}\n/*\n * Now for some HTML. \n */\n#html-text {\n  transition: top 300ms;\n  top: calc(25% + 115px);\n}\n/*\n * Undo some defaults\n */\n\n.bold {\n  font-weight: bold;\n}\n.container {\n  font-family: verdana, arial, helvetica, sans-serif;\n}\n.container a {\n  text-decoration: none; color: #369;\n}\n.container p {\n  margin: 0;\n}\n<!-- What should we create? -->\n\n<h1>Nothing, yet</h1>";
+    text = "/*\n\n  Welcome to Steszyn.ca \n  Don't be alarmed, you're not getting hacked. \n  The website will build itself \n  Thanks to: pen#PwLXXP\n*/\n.pre { \n  overflow: auto;\n  position: fixed; width: 35%;\n  padding: 24px 12px;\n  top: 10px; height: 25%; left: 20%;\n}\n.pre {\n  background-color: #2E2E2E; color: #d6d6d6;\n  transition: left 500ms;\n  border: 1px solid rgba(0,0,0,0.2);\n  box-sizing: border-box;\n  border-radius: 3px;\n  box-shadow: 0px 4px 0px 2px rgba(0,0,0,0.1);\n}\n/*\n\n  Put these on the right...\n*/\n.pre {\n  left: 63% \n}\n/*\n\n  Here's the box for HTML. \n*/\n#html-text {\n  transition: top 300ms;\n  top: calc(25% + 115px);\n}\n.bold {\n  font-weight: bold;\n}\n.container {\n  font-family: 'Oswald', sans-serif;  }\n.container a {\n  text-decoration: none; \n  color: #369;\n}\n.container p {\n  margin: 0;\n}\n<!-- Let's write some HTML. -->\n<!-- How about you learn about me? -->\n<div id=\"top\">\n  <div id=\"opacity\">\n    <div class=\"box\">\n      <div id=\"avatar\"></div>\n      <h1>SHANE STESZYN</h1>\n      <p>\n<span>Developer</span>\n</p>\n    </div>\n  </div>\n</div>\n/*\n\n  Let's style the top\n*/\n#top {\n height: 70vh;\n width: 100vw;\n text-align: center;\n background-image: url(\"background2.jpg\");\n background-size: 100vw;\n}\n/*\n\n  Add a black filter.\n*/\n#opacity {\n  background: rgba(0, 0, 0, .5);\n  height: 100%;\n  width: 100%;\n}\n/*\n\n  Let's add a picture of me.\n*/\n#avatar {\n  background-image: url('avatar.jpg');\n  width: 120px;\n  height: 120px;\n  background-size: cover;\n  background-position: center;\n  border-radius: 50%;\n  margin:auto\n}\n/*\n\n  Time to center all this \n*/\n.box {\n  position: absolute;\n  left: 50%;\n  top: 35%;\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  border: 2px solid white;\n  border-radius: 1%;\n  border-bottom: none;\n  padding: 12px;\n  color: white;\n}\n/*\n\n  Build the bottom border\n*/\n.box p {\n  color: #fff;\n  font-size: 18px;\n  position: absolute;\n  bottom: -10px;\n  right: 0;\n  left: 0;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.box:after, .box:before {\n  position: absolute;\n  bottom: 0;\n  border-bottom: 1px solid #fff;\n  width: 75px;\n  content: \"\";\n}\n.box:after {\n  right: 0;\n}\n.box:before {\n  left: 0;\n}\n/*\n\n  Oh wait, are you on a smartphone???\n*/\n@media (max-width: 767px) {\n  .box:before, .box:after {\n    width: 15px;\n  }\n  #top {\n    background-size: 100vh;\n    background-position: 50%; \n  }\n}";
 
     nl = true;
     openCSS = false;

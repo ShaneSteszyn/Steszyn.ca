@@ -12,15 +12,7 @@ process.argv.forEach(function(v){
   }
 });
 
-app.use('/static', express.static('public'));
-
-app.use(express.static('app/public'));
-
-app.use('/', function(req, res, next){
-  console.log('/');
-  res.sendfile('public/index.html')
-});
-
+app.use(express.static(__dirname + '/public'));
 
 console.log('Starting a server on '+CONFIG.port);
 
